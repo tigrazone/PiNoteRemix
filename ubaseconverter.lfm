@@ -1,0 +1,140 @@
+object fBaseConverter: TfBaseConverter
+  Left = 503
+  Height = 164
+  Top = 265
+  Width = 417
+  BorderStyle = bsDialog
+  Caption = 'Base converter'
+  ClientHeight = 164
+  ClientWidth = 417
+  Font.Height = -12
+  OnCreate = FormCreate
+  OnShow = FormShow
+  Position = poMainFormCenter
+  LCLVersion = '2.0.12.0'
+  object SpeedButton3: TSpeedButton
+    Left = 252
+    Height = 21
+    Top = 72
+    Width = 55
+    Caption = 'Convert'
+    OnClick = SpeedButton3Click
+  end
+  object InsHex: TSpeedButton
+    Left = 312
+    Height = 21
+    Top = 72
+    Width = 84
+    Caption = 'Insert in Text'
+    OnClick = InsHexClick
+  end
+  object InsBin: TSpeedButton
+    Left = 312
+    Height = 21
+    Top = 40
+    Width = 84
+    Caption = 'Insert in Text'
+    OnClick = InsBinClick
+  end
+  object SpeedButton2: TSpeedButton
+    Left = 252
+    Height = 21
+    Top = 40
+    Width = 55
+    Caption = 'Convert'
+    OnClick = SpeedButton2Click
+  end
+  object SpeedButton1: TSpeedButton
+    Left = 252
+    Height = 21
+    Top = 9
+    Width = 55
+    Caption = 'Convert'
+    OnClick = SpeedButton1Click
+  end
+  object InsDec: TSpeedButton
+    Left = 312
+    Height = 21
+    Top = 9
+    Width = 84
+    Caption = 'Insert in Text'
+    OnClick = InsDecClick
+  end
+  object leDec: TLabeledEdit
+    Left = 96
+    Height = 26
+    Top = 9
+    Width = 152
+    EditLabel.Height = 15
+    EditLabel.Width = 52
+    EditLabel.Caption = 'Decimal: '
+    EditLabel.ParentColor = False
+    LabelPosition = lpLeft
+    TabOrder = 0
+    OnKeyPress = leDecKeyPress
+  end
+  object leBin: TLabeledEdit
+    Left = 96
+    Height = 26
+    Top = 40
+    Width = 152
+    EditLabel.Height = 15
+    EditLabel.Width = 42
+    EditLabel.Caption = 'Binary: '
+    EditLabel.ParentColor = False
+    LabelPosition = lpLeft
+    TabOrder = 1
+    OnKeyPress = leBinKeyPress
+  end
+  object leHex: TLabeledEdit
+    Left = 96
+    Height = 26
+    Top = 72
+    Width = 152
+    EditLabel.Height = 15
+    EditLabel.Width = 79
+    EditLabel.Caption = 'Hexadecimal: '
+    EditLabel.ParentColor = False
+    LabelPosition = lpLeft
+    TabOrder = 2
+    OnKeyPress = leHexKeyPress
+  end
+  object Button1: TButton
+    Left = 336
+    Height = 25
+    Top = 136
+    Width = 75
+    Caption = '&Close'
+    OnClick = Button1Click
+    TabOrder = 3
+  end
+  object leOct: TLabeledEdit
+    Left = 96
+    Height = 26
+    Top = 104
+    Width = 152
+    EditLabel.Height = 15
+    EditLabel.Width = 35
+    EditLabel.Caption = 'Octal: '
+    EditLabel.ParentColor = False
+    LabelPosition = lpLeft
+    TabOrder = 4
+    OnKeyPress = leOctKeyPress
+  end
+  object SpeedButton4: TSpeedButton
+    Left = 252
+    Height = 21
+    Top = 104
+    Width = 55
+    Caption = 'Convert'
+    OnClick = SpeedButton4Click
+  end
+  object InsOct: TSpeedButton
+    Left = 312
+    Height = 21
+    Top = 104
+    Width = 84
+    Caption = 'Insert in Text'
+    OnClick = InsOctClick
+  end
+end

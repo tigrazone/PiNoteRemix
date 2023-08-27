@@ -1,0 +1,58 @@
+object fHXTag: TfHXTag
+  Left = 481
+  Height = 128
+  Top = 281
+  Width = 354
+  BorderStyle = bsDialog
+  Caption = 'Insert HTML/XML Tag'
+  ClientHeight = 128
+  ClientWidth = 354
+  Font.Height = -12
+  OnCreate = FormCreate
+  OnShow = FormShow
+  Position = poMainFormCenter
+  LCLVersion = '2.0.8.0'
+  object leOpening: TLabeledEdit
+    Left = 16
+    Height = 26
+    Top = 32
+    Width = 216
+    EditLabel.Height = 15
+    EditLabel.Width = 216
+    EditLabel.Caption = 'Opening tag (with attributes):'
+    EditLabel.ParentColor = False
+    TabOrder = 0
+    Text = '<tag>'
+    OnChange = leOpeningChange
+  end
+  object leClosing: TLabeledEdit
+    Left = 16
+    Height = 26
+    Top = 88
+    Width = 216
+    EditLabel.Height = 15
+    EditLabel.Width = 216
+    EditLabel.Caption = 'Closing tag:'
+    EditLabel.ParentColor = False
+    TabOrder = 1
+    Text = '</tag>'
+  end
+  object Button1: TButton
+    Left = 264
+    Height = 25
+    Top = 16
+    Width = 75
+    Caption = '&Ok'
+    OnClick = Button1Click
+    TabOrder = 2
+  end
+  object Button2: TButton
+    Left = 264
+    Height = 25
+    Top = 48
+    Width = 75
+    Caption = '&Cancel'
+    OnClick = Button2Click
+    TabOrder = 3
+  end
+end

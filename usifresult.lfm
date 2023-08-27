@@ -1,0 +1,23 @@
+object fSIFResult: TfSIFResult
+  Left = 356
+  Height = 320
+  Top = 209
+  Width = 640
+  Caption = 'Search into file results...'
+  ClientHeight = 320
+  ClientWidth = 640
+  Font.Height = -12
+  FormStyle = fsStayOnTop
+  OnClose = FormClose
+  Position = poOwnerFormCenter
+  LCLVersion = '1.6.0.4'
+  object pcResult: TPageControl
+    Left = 0
+    Height = 320
+    Top = 0
+    Width = 640
+    Align = alClient
+    TabOrder = 0
+    Options = [nboShowCloseButtons]
+  end
+end

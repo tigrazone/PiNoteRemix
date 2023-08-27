@@ -1,0 +1,58 @@
+object fExtTOut: TfExtTOut
+  Left = 428
+  Height = 278
+  Top = 249
+  Width = 500
+  Caption = 'External tool output'
+  ClientHeight = 278
+  ClientWidth = 500
+  Font.Height = -12
+  Position = poDesktopCenter
+  LCLVersion = '2.0.8.0'
+  object Command: TStaticText
+    Left = 0
+    Height = 17
+    Top = 0
+    Width = 500
+    Align = alTop
+    TabOrder = 0
+  end
+  object ETOut: TMemo
+    Left = 0
+    Height = 223
+    Top = 17
+    Width = 500
+    Align = alTop
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    ReadOnly = True
+    ScrollBars = ssAutoBoth
+    TabOrder = 1
+  end
+  object CloseBtn: TButton
+    Left = 416
+    Height = 25
+    Top = 247
+    Width = 75
+    Anchors = [akRight, akBottom]
+    Caption = 'Close'
+    OnClick = CloseBtnClick
+    TabOrder = 2
+  end
+  object Button1: TButton
+    Left = 312
+    Height = 25
+    Top = 247
+    Width = 99
+    Caption = 'Save output'
+    OnClick = Button1Click
+    TabOrder = 3
+  end
+  object SaveDialog1: TSaveDialog
+    Title = 'Save to file'
+    DefaultExt = '.txt'
+    Filter = 'Text file|*.txt'
+    Options = [ofExtensionDifferent, ofPathMustExist, ofEnableSizing, ofViewDetail]
+    left = 163
+    top = 70
+  end
+end

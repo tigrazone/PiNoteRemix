@@ -1,0 +1,114 @@
+object fMultiPaste: TfMultiPaste
+  Left = 469
+  Height = 480
+  Top = 224
+  Width = 500
+  Caption = 'MultiPaste'
+  ClientHeight = 480
+  ClientWidth = 500
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnShow = FormShow
+  Position = poOwnerFormCenter
+  LCLVersion = '2.0.12.0'
+  object GroupBox1: TGroupBox
+    Left = 0
+    Height = 160
+    Top = 0
+    Width = 500
+    Align = alTop
+    Caption = ' Paste options '
+    ClientHeight = 141
+    ClientWidth = 496
+    TabOrder = 0
+    object leTxtBefore: TLabeledEdit
+      Left = 8
+      Height = 26
+      Top = 24
+      Width = 480
+      Anchors = [akTop, akLeft, akRight]
+      EditLabel.Height = 15
+      EditLabel.Width = 480
+      EditLabel.Caption = 'Text before each line'
+      EditLabel.ParentColor = False
+      TabOrder = 0
+      OnChange = leTxtBeforeChange
+    end
+    object leTxtAfter: TLabeledEdit
+      Left = 8
+      Height = 26
+      Top = 72
+      Width = 480
+      Anchors = [akTop, akLeft, akRight]
+      EditLabel.Height = 15
+      EditLabel.Width = 480
+      EditLabel.Caption = 'Text after each line'
+      EditLabel.ParentColor = False
+      TabOrder = 1
+      OnChange = leTxtBeforeChange
+    end
+    object cbTrim: TCheckBox
+      Left = 8
+      Height = 21
+      Top = 112
+      Width = 148
+      Caption = 'Trim clipboard content'
+      Checked = True
+      OnChange = leTxtBeforeChange
+      State = cbChecked
+      TabOrder = 2
+    end
+  end
+  object GroupBox2: TGroupBox
+    Left = 0
+    Height = 280
+    Top = 160
+    Width = 500
+    Align = alTop
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Caption = ' Preview '
+    ClientHeight = 261
+    ClientWidth = 496
+    TabOrder = 1
+    object mPreview: TMemo
+      Left = 0
+      Height = 261
+      Top = 0
+      Width = 496
+      Align = alClient
+      ReadOnly = True
+      ScrollBars = ssAutoBoth
+      TabOrder = 0
+    end
+  end
+  object bInsert: TButton
+    Left = 80
+    Height = 25
+    Top = 448
+    Width = 195
+    Anchors = [akRight, akBottom]
+    Caption = '&Insert into active document'
+    OnClick = bInsertClick
+    TabOrder = 2
+  end
+  object Button2: TButton
+    Left = 280
+    Height = 25
+    Top = 448
+    Width = 131
+    Anchors = [akRight, akBottom]
+    Caption = 'C&opy into clipboard'
+    OnClick = Button2Click
+    TabOrder = 3
+  end
+  object Button1: TButton
+    Left = 416
+    Height = 25
+    Top = 448
+    Width = 75
+    Anchors = [akRight, akBottom]
+    Caption = '&Close'
+    OnClick = Button1Click
+    TabOrder = 4
+  end
+end

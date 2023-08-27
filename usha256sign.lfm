@@ -1,0 +1,81 @@
+object fSHA256Sign: TfSHA256Sign
+  Left = 481
+  Height = 400
+  Top = 307
+  Width = 500
+  Caption = 'Generate SHA256 signature'
+  ClientHeight = 400
+  ClientWidth = 500
+  OnCreate = FormCreate
+  OnShow = FormShow
+  Position = poOwnerFormCenter
+  LCLVersion = '2.0.12.0'
+  object cbSeparatedLines: TCheckBox
+    Left = 0
+    Height = 21
+    Top = 0
+    Width = 500
+    Align = alTop
+    Caption = 'Consider &each line as a separate string'
+    OnChange = cbSeparatedLinesChange
+    TabOrder = 0
+  end
+  object OrigMemo: TMemo
+    Left = 0
+    Height = 160
+    Top = 21
+    Width = 500
+    Align = alTop
+    OnChange = OrigMemoChange
+    ScrollBars = ssAutoBoth
+    TabOrder = 1
+  end
+  object GroupBox1: TGroupBox
+    Left = 0
+    Height = 177
+    Top = 181
+    Width = 500
+    Align = alTop
+    Caption = ' Generated SHA256 signature '
+    ClientHeight = 158
+    ClientWidth = 496
+    TabOrder = 2
+    object DestMemo: TMemo
+      Left = 0
+      Height = 158
+      Top = 0
+      Width = 496
+      Align = alClient
+      ReadOnly = True
+      ScrollBars = ssAutoBoth
+      TabOrder = 0
+    end
+  end
+  object bInsert: TButton
+    Left = 80
+    Height = 25
+    Top = 368
+    Width = 195
+    Caption = '&Insert into active document'
+    OnClick = bInsertClick
+    TabOrder = 3
+  end
+  object Button2: TButton
+    Left = 280
+    Height = 25
+    Top = 368
+    Width = 131
+    Caption = 'C&opy into clipboard'
+    OnClick = Button2Click
+    TabOrder = 4
+  end
+  object Button1: TButton
+    Left = 416
+    Height = 25
+    Top = 368
+    Width = 75
+    Caption = '&Close'
+    OnClick = Button1Click
+    TabOrder = 5
+  end
+end

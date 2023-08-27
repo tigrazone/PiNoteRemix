@@ -1,0 +1,2308 @@
+object SymbForm: TSymbForm
+  Left = 424
+  Height = 418
+  Top = 151
+  Width = 503
+  BorderStyle = bsDialog
+  Caption = 'Symbols'
+  ClientHeight = 418
+  ClientWidth = 503
+  Font.Height = -12
+  OnCreate = FormCreate
+  OnShow = FormShow
+  Position = poOwnerFormCenter
+  LCLVersion = '1.6.0.4'
+  object Label1: TLabel
+    Left = 13
+    Height = 17
+    Top = 12
+    Width = 27
+    Caption = 'Font:'
+    ParentColor = False
+  end
+  object FontList: TComboBox
+    Left = 44
+    Height = 29
+    Top = 6
+    Width = 443
+    ItemHeight = 0
+    OnChange = FontListChange
+    Style = csDropDownList
+    TabOrder = 0
+  end
+  object BtnPanel: TPanel
+    Left = 13
+    Height = 330
+    Top = 35
+    Width = 474
+    BorderSpacing.InnerBorder = 5
+    BevelInner = bvLowered
+    ClientHeight = 330
+    ClientWidth = 474
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -12
+    ParentFont = False
+    TabOrder = 1
+    object SpeedButton1: TSpeedButton
+      Left = 9
+      Height = 24
+      Top = 8
+      Width = 24
+      Caption = '!'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton2: TSpeedButton
+      Left = 33
+      Height = 24
+      Top = 8
+      Width = 24
+      Caption = '"'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton3: TSpeedButton
+      Left = 57
+      Height = 24
+      Top = 8
+      Width = 24
+      Caption = '#'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton4: TSpeedButton
+      Left = 81
+      Height = 24
+      Top = 8
+      Width = 24
+      Caption = '$'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton5: TSpeedButton
+      Left = 177
+      Height = 24
+      Top = 8
+      Width = 24
+      Caption = '('
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton6: TSpeedButton
+      Left = 153
+      Height = 24
+      Top = 8
+      Width = 24
+      Caption = ''''
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton7: TSpeedButton
+      Left = 129
+      Height = 24
+      Top = 8
+      Width = 24
+      Caption = '&&'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton8: TSpeedButton
+      Left = 105
+      Height = 24
+      Top = 8
+      Width = 24
+      Caption = '%'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton9: TSpeedButton
+      Left = 369
+      Height = 24
+      Top = 8
+      Width = 24
+      Caption = '0'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton10: TSpeedButton
+      Left = 345
+      Height = 24
+      Top = 8
+      Width = 24
+      Caption = '/'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton11: TSpeedButton
+      Left = 321
+      Height = 24
+      Top = 8
+      Width = 24
+      Caption = '.'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton12: TSpeedButton
+      Left = 297
+      Height = 24
+      Top = 8
+      Width = 24
+      Caption = '-'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton13: TSpeedButton
+      Left = 273
+      Height = 24
+      Top = 8
+      Width = 24
+      Caption = ','
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton14: TSpeedButton
+      Left = 249
+      Height = 24
+      Top = 8
+      Width = 24
+      Caption = '+'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton15: TSpeedButton
+      Left = 225
+      Height = 24
+      Top = 8
+      Width = 24
+      Caption = '*'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton16: TSpeedButton
+      Left = 201
+      Height = 24
+      Top = 8
+      Width = 24
+      Caption = ')'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton17: TSpeedButton
+      Left = 441
+      Height = 24
+      Top = 8
+      Width = 24
+      Caption = '3'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton18: TSpeedButton
+      Left = 417
+      Height = 24
+      Top = 8
+      Width = 24
+      Caption = '2'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton19: TSpeedButton
+      Left = 393
+      Height = 24
+      Top = 8
+      Width = 24
+      Caption = '1'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton20: TSpeedButton
+      Left = 9
+      Height = 24
+      Top = 32
+      Width = 24
+      Caption = '4'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton21: TSpeedButton
+      Left = 33
+      Height = 24
+      Top = 32
+      Width = 24
+      Caption = '5'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton22: TSpeedButton
+      Left = 57
+      Height = 24
+      Top = 32
+      Width = 24
+      Caption = '6'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton23: TSpeedButton
+      Left = 81
+      Height = 24
+      Top = 32
+      Width = 24
+      Caption = '7'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton24: TSpeedButton
+      Left = 177
+      Height = 24
+      Top = 32
+      Width = 24
+      Caption = ';'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton25: TSpeedButton
+      Left = 153
+      Height = 24
+      Top = 32
+      Width = 24
+      Caption = ':'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton26: TSpeedButton
+      Left = 129
+      Height = 24
+      Top = 32
+      Width = 24
+      Caption = '9'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton27: TSpeedButton
+      Left = 105
+      Height = 24
+      Top = 32
+      Width = 24
+      Caption = '8'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton28: TSpeedButton
+      Left = 369
+      Height = 24
+      Top = 32
+      Width = 24
+      Caption = 'C'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton29: TSpeedButton
+      Left = 345
+      Height = 24
+      Top = 32
+      Width = 24
+      Caption = 'B'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton30: TSpeedButton
+      Left = 321
+      Height = 24
+      Top = 32
+      Width = 24
+      Caption = 'A'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton31: TSpeedButton
+      Left = 297
+      Height = 24
+      Top = 32
+      Width = 24
+      Caption = '@'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton32: TSpeedButton
+      Left = 273
+      Height = 24
+      Top = 32
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton33: TSpeedButton
+      Left = 249
+      Height = 24
+      Top = 32
+      Width = 24
+      Caption = '>'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton34: TSpeedButton
+      Left = 225
+      Height = 24
+      Top = 32
+      Width = 24
+      Caption = '='
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton35: TSpeedButton
+      Left = 201
+      Height = 24
+      Top = 32
+      Width = 24
+      Caption = '<'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton36: TSpeedButton
+      Left = 441
+      Height = 24
+      Top = 32
+      Width = 24
+      Caption = 'F'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton37: TSpeedButton
+      Left = 417
+      Height = 24
+      Top = 32
+      Width = 24
+      Caption = 'E'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton38: TSpeedButton
+      Left = 393
+      Height = 24
+      Top = 32
+      Width = 24
+      Caption = 'D'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton39: TSpeedButton
+      Left = 9
+      Height = 24
+      Top = 56
+      Width = 24
+      Caption = 'G'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton40: TSpeedButton
+      Left = 33
+      Height = 24
+      Top = 56
+      Width = 24
+      Caption = 'H'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton41: TSpeedButton
+      Left = 57
+      Height = 24
+      Top = 56
+      Width = 24
+      Caption = 'I'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton42: TSpeedButton
+      Left = 81
+      Height = 24
+      Top = 56
+      Width = 24
+      Caption = 'J'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton43: TSpeedButton
+      Left = 177
+      Height = 24
+      Top = 56
+      Width = 24
+      Caption = 'N'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton44: TSpeedButton
+      Left = 153
+      Height = 24
+      Top = 56
+      Width = 24
+      Caption = 'M'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton45: TSpeedButton
+      Left = 129
+      Height = 24
+      Top = 56
+      Width = 24
+      Caption = 'L'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton46: TSpeedButton
+      Left = 105
+      Height = 24
+      Top = 56
+      Width = 24
+      Caption = 'K'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton47: TSpeedButton
+      Left = 369
+      Height = 24
+      Top = 56
+      Width = 24
+      Caption = 'V'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton48: TSpeedButton
+      Left = 345
+      Height = 24
+      Top = 56
+      Width = 24
+      Caption = 'U'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton49: TSpeedButton
+      Left = 321
+      Height = 24
+      Top = 56
+      Width = 24
+      Caption = 'T'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton50: TSpeedButton
+      Left = 297
+      Height = 24
+      Top = 56
+      Width = 24
+      Caption = 'S'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton51: TSpeedButton
+      Left = 273
+      Height = 24
+      Top = 56
+      Width = 24
+      Caption = 'R'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton52: TSpeedButton
+      Left = 249
+      Height = 24
+      Top = 56
+      Width = 24
+      Caption = 'Q'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton53: TSpeedButton
+      Left = 225
+      Height = 24
+      Top = 56
+      Width = 24
+      Caption = 'P'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton54: TSpeedButton
+      Left = 201
+      Height = 24
+      Top = 56
+      Width = 24
+      Caption = 'O'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton55: TSpeedButton
+      Left = 441
+      Height = 24
+      Top = 56
+      Width = 24
+      Caption = 'Y'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton56: TSpeedButton
+      Left = 417
+      Height = 24
+      Top = 56
+      Width = 24
+      Caption = 'X'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton57: TSpeedButton
+      Left = 393
+      Height = 24
+      Top = 56
+      Width = 24
+      Caption = 'W'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton58: TSpeedButton
+      Left = 9
+      Height = 24
+      Top = 80
+      Width = 24
+      Caption = 'Z'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton59: TSpeedButton
+      Left = 33
+      Height = 24
+      Top = 80
+      Width = 24
+      Caption = '['
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton60: TSpeedButton
+      Left = 57
+      Height = 24
+      Top = 80
+      Width = 24
+      Caption = '\'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton61: TSpeedButton
+      Left = 81
+      Height = 24
+      Top = 80
+      Width = 24
+      Caption = ']'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton62: TSpeedButton
+      Left = 177
+      Height = 24
+      Top = 80
+      Width = 24
+      Caption = 'a'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton63: TSpeedButton
+      Left = 153
+      Height = 24
+      Top = 80
+      Width = 24
+      Caption = '`'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton64: TSpeedButton
+      Left = 129
+      Height = 24
+      Top = 80
+      Width = 24
+      Caption = '_'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton65: TSpeedButton
+      Left = 105
+      Height = 24
+      Top = 80
+      Width = 24
+      Caption = '^'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton66: TSpeedButton
+      Left = 369
+      Height = 24
+      Top = 80
+      Width = 24
+      Caption = 'i'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton67: TSpeedButton
+      Left = 345
+      Height = 24
+      Top = 80
+      Width = 24
+      Caption = 'h'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton68: TSpeedButton
+      Left = 321
+      Height = 24
+      Top = 80
+      Width = 24
+      Caption = 'g'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton69: TSpeedButton
+      Left = 297
+      Height = 24
+      Top = 80
+      Width = 24
+      Caption = 'f'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton70: TSpeedButton
+      Left = 273
+      Height = 24
+      Top = 80
+      Width = 24
+      Caption = 'e'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton71: TSpeedButton
+      Left = 249
+      Height = 24
+      Top = 80
+      Width = 24
+      Caption = 'd'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton72: TSpeedButton
+      Left = 225
+      Height = 24
+      Top = 80
+      Width = 24
+      Caption = 'c'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton73: TSpeedButton
+      Left = 201
+      Height = 24
+      Top = 80
+      Width = 24
+      Caption = 'b'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton74: TSpeedButton
+      Left = 441
+      Height = 24
+      Top = 80
+      Width = 24
+      Caption = 'l'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton75: TSpeedButton
+      Left = 417
+      Height = 24
+      Top = 80
+      Width = 24
+      Caption = 'k'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton76: TSpeedButton
+      Left = 393
+      Height = 24
+      Top = 80
+      Width = 24
+      Caption = 'j'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton77: TSpeedButton
+      Left = 9
+      Height = 24
+      Top = 104
+      Width = 24
+      Caption = 'm'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton78: TSpeedButton
+      Left = 33
+      Height = 24
+      Top = 104
+      Width = 24
+      Caption = 'n'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton79: TSpeedButton
+      Left = 57
+      Height = 24
+      Top = 104
+      Width = 24
+      Caption = 'o'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton80: TSpeedButton
+      Left = 81
+      Height = 24
+      Top = 104
+      Width = 24
+      Caption = 'p'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton81: TSpeedButton
+      Left = 177
+      Height = 24
+      Top = 104
+      Width = 24
+      Caption = 't'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton82: TSpeedButton
+      Left = 153
+      Height = 24
+      Top = 104
+      Width = 24
+      Caption = 's'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton83: TSpeedButton
+      Left = 129
+      Height = 24
+      Top = 104
+      Width = 24
+      Caption = 'r'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton84: TSpeedButton
+      Left = 105
+      Height = 24
+      Top = 104
+      Width = 24
+      Caption = 'q'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton85: TSpeedButton
+      Left = 369
+      Height = 24
+      Top = 104
+      Width = 24
+      Caption = '|'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton86: TSpeedButton
+      Left = 345
+      Height = 24
+      Top = 104
+      Width = 24
+      Caption = '{'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton87: TSpeedButton
+      Left = 321
+      Height = 24
+      Top = 104
+      Width = 24
+      Caption = 'z'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton88: TSpeedButton
+      Left = 297
+      Height = 24
+      Top = 104
+      Width = 24
+      Caption = 'y'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton89: TSpeedButton
+      Left = 273
+      Height = 24
+      Top = 104
+      Width = 24
+      Caption = 'x'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton90: TSpeedButton
+      Left = 249
+      Height = 24
+      Top = 104
+      Width = 24
+      Caption = 'w'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton91: TSpeedButton
+      Left = 225
+      Height = 24
+      Top = 104
+      Width = 24
+      Caption = 'v'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton92: TSpeedButton
+      Left = 201
+      Height = 24
+      Top = 104
+      Width = 24
+      Caption = 'u'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton93: TSpeedButton
+      Left = 441
+      Height = 24
+      Top = 104
+      Width = 24
+      Caption = ' '
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton94: TSpeedButton
+      Left = 417
+      Height = 24
+      Top = 104
+      Width = 24
+      Caption = '~'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton95: TSpeedButton
+      Left = 393
+      Height = 24
+      Top = 104
+      Width = 24
+      Caption = '}'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton96: TSpeedButton
+      Left = 9
+      Height = 24
+      Top = 128
+      Width = 24
+      Caption = '¤'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton97: TSpeedButton
+      Left = 33
+      Height = 24
+      Top = 128
+      Width = 24
+      Caption = '¦'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton98: TSpeedButton
+      Left = 57
+      Height = 24
+      Top = 128
+      Width = 24
+      Caption = '§'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton99: TSpeedButton
+      Left = 81
+      Height = 24
+      Top = 128
+      Width = 24
+      Caption = '©'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton100: TSpeedButton
+      Left = 177
+      Height = 24
+      Top = 128
+      Width = 24
+      Caption = '°'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton101: TSpeedButton
+      Left = 153
+      Height = 24
+      Top = 128
+      Width = 24
+      Caption = '®'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton102: TSpeedButton
+      Left = 129
+      Height = 24
+      Top = 128
+      Width = 24
+      Caption = '¬'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton103: TSpeedButton
+      Left = 105
+      Height = 24
+      Top = 128
+      Width = 24
+      Caption = '«'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton104: TSpeedButton
+      Left = 369
+      Height = 24
+      Top = 128
+      Width = 24
+      Caption = #5
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton105: TSpeedButton
+      Left = 345
+      Height = 24
+      Top = 128
+      Width = 24
+      Caption = #4
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton106: TSpeedButton
+      Left = 321
+      Height = 24
+      Top = 128
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton107: TSpeedButton
+      Left = 297
+      Height = 24
+      Top = 128
+      Width = 24
+      Caption = '»'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton108: TSpeedButton
+      Left = 273
+      Height = 24
+      Top = 128
+      Width = 24
+      Caption = '·'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton109: TSpeedButton
+      Left = 249
+      Height = 24
+      Top = 128
+      Width = 24
+      Caption = '¶'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton110: TSpeedButton
+      Left = 225
+      Height = 24
+      Top = 128
+      Width = 24
+      Caption = 'µ'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton111: TSpeedButton
+      Left = 201
+      Height = 24
+      Top = 128
+      Width = 24
+      Caption = '±'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton112: TSpeedButton
+      Left = 441
+      Height = 24
+      Top = 128
+      Width = 24
+      Caption = #12
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton113: TSpeedButton
+      Left = 417
+      Height = 24
+      Top = 128
+      Width = 24
+      Caption = #11
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton114: TSpeedButton
+      Left = 393
+      Height = 24
+      Top = 128
+      Width = 24
+      Caption = #7
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton115: TSpeedButton
+      Left = 9
+      Height = 24
+      Top = 152
+      Width = 24
+      Caption = #14
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton116: TSpeedButton
+      Left = 33
+      Height = 24
+      Top = 152
+      Width = 24
+      Caption = #15
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton117: TSpeedButton
+      Left = 57
+      Height = 24
+      Top = 152
+      Width = 24
+      Caption = #16
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton118: TSpeedButton
+      Left = 81
+      Height = 24
+      Top = 152
+      Width = 24
+      Caption = #17
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton119: TSpeedButton
+      Left = 177
+      Height = 24
+      Top = 152
+      Width = 24
+      Caption = #21
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton120: TSpeedButton
+      Left = 153
+      Height = 24
+      Top = 152
+      Width = 24
+      Caption = #20
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton121: TSpeedButton
+      Left = 129
+      Height = 24
+      Top = 152
+      Width = 24
+      Caption = #19
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton122: TSpeedButton
+      Left = 105
+      Height = 24
+      Top = 152
+      Width = 24
+      Caption = #18
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton123: TSpeedButton
+      Left = 369
+      Height = 24
+      Top = 152
+      Width = 24
+      Caption = #4
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton124: TSpeedButton
+      Left = 345
+      Height = 24
+      Top = 152
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton125: TSpeedButton
+      Left = 321
+      Height = 24
+      Top = 152
+      Width = 24
+      Caption = #27
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton126: TSpeedButton
+      Left = 297
+      Height = 24
+      Top = 152
+      Width = 24
+      Caption = #26
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton127: TSpeedButton
+      Left = 273
+      Height = 24
+      Top = 152
+      Width = 24
+      Caption = #25
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton128: TSpeedButton
+      Left = 249
+      Height = 24
+      Top = 152
+      Width = 24
+      Caption = #24
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton129: TSpeedButton
+      Left = 225
+      Height = 24
+      Top = 152
+      Width = 24
+      Caption = #23
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton130: TSpeedButton
+      Left = 201
+      Height = 24
+      Top = 152
+      Width = 24
+      Caption = #22
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton131: TSpeedButton
+      Left = 441
+      Height = 24
+      Top = 152
+      Width = 24
+      Caption = '„'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton132: TSpeedButton
+      Left = 417
+      Height = 24
+      Top = 152
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton133: TSpeedButton
+      Left = 393
+      Height = 24
+      Top = 152
+      Width = 24
+      Caption = '‚'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton134: TSpeedButton
+      Left = 9
+      Height = 24
+      Top = 176
+      Width = 24
+      Caption = '…'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton135: TSpeedButton
+      Left = 33
+      Height = 24
+      Top = 176
+      Width = 24
+      Caption = '†'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton136: TSpeedButton
+      Left = 57
+      Height = 24
+      Top = 176
+      Width = 24
+      Caption = '‡'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton137: TSpeedButton
+      Left = 81
+      Height = 24
+      Top = 176
+      Width = 24
+      Caption = '€'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton138: TSpeedButton
+      Left = 177
+      Height = 24
+      Top = 176
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton139: TSpeedButton
+      Left = 153
+      Height = 24
+      Top = 176
+      Width = 24
+      Caption = '‹'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton140: TSpeedButton
+      Left = 129
+      Height = 24
+      Top = 176
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton141: TSpeedButton
+      Left = 105
+      Height = 24
+      Top = 176
+      Width = 24
+      Caption = '‰'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton142: TSpeedButton
+      Left = 369
+      Height = 24
+      Top = 176
+      Width = 24
+      Caption = '”'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton143: TSpeedButton
+      Left = 345
+      Height = 24
+      Top = 176
+      Width = 24
+      Caption = '“'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton144: TSpeedButton
+      Left = 321
+      Height = 24
+      Top = 176
+      Width = 24
+      Caption = '’'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton145: TSpeedButton
+      Left = 297
+      Height = 24
+      Top = 176
+      Width = 24
+      Caption = '‘'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton146: TSpeedButton
+      Left = 273
+      Height = 24
+      Top = 176
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton147: TSpeedButton
+      Left = 249
+      Height = 24
+      Top = 176
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton148: TSpeedButton
+      Left = 225
+      Height = 24
+      Top = 176
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton149: TSpeedButton
+      Left = 201
+      Height = 24
+      Top = 176
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton150: TSpeedButton
+      Left = 441
+      Height = 24
+      Top = 176
+      Width = 24
+      Caption = '—'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton151: TSpeedButton
+      Left = 417
+      Height = 24
+      Top = 176
+      Width = 24
+      Caption = '–'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton152: TSpeedButton
+      Left = 393
+      Height = 24
+      Top = 176
+      Width = 24
+      Caption = '•'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton153: TSpeedButton
+      Left = 9
+      Height = 24
+      Top = 200
+      Width = 24
+      Caption = '™'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton154: TSpeedButton
+      Left = 33
+      Height = 24
+      Top = 200
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton155: TSpeedButton
+      Left = 57
+      Height = 24
+      Top = 200
+      Width = 24
+      Caption = '›'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton156: TSpeedButton
+      Left = 81
+      Height = 24
+      Top = 200
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton157: TSpeedButton
+      Left = 177
+      Height = 24
+      Top = 200
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton158: TSpeedButton
+      Left = 153
+      Height = 24
+      Top = 200
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton159: TSpeedButton
+      Left = 129
+      Height = 24
+      Top = 200
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton160: TSpeedButton
+      Left = 105
+      Height = 24
+      Top = 200
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton161: TSpeedButton
+      Left = 369
+      Height = 24
+      Top = 200
+      Width = 24
+      Caption = '©'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton162: TSpeedButton
+      Left = 345
+      Height = 24
+      Top = 200
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton163: TSpeedButton
+      Left = 321
+      Height = 24
+      Top = 200
+      Width = 24
+      Caption = '§'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton164: TSpeedButton
+      Left = 297
+      Height = 24
+      Top = 200
+      Width = 24
+      Caption = '¦'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton165: TSpeedButton
+      Left = 273
+      Height = 24
+      Top = 200
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton166: TSpeedButton
+      Left = 249
+      Height = 24
+      Top = 200
+      Width = 24
+      Caption = '¤'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton167: TSpeedButton
+      Left = 225
+      Height = 24
+      Top = 200
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton168: TSpeedButton
+      Left = 201
+      Height = 24
+      Top = 200
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton169: TSpeedButton
+      Left = 441
+      Height = 24
+      Top = 200
+      Width = 24
+      Caption = '¬'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton170: TSpeedButton
+      Left = 417
+      Height = 24
+      Top = 200
+      Width = 24
+      Caption = '«'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton171: TSpeedButton
+      Left = 393
+      Height = 24
+      Top = 200
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton172: TSpeedButton
+      Left = 9
+      Height = 24
+      Top = 224
+      Width = 24
+      Caption = '­'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton173: TSpeedButton
+      Left = 33
+      Height = 24
+      Top = 224
+      Width = 24
+      Caption = '®'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton174: TSpeedButton
+      Left = 57
+      Height = 24
+      Top = 224
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton175: TSpeedButton
+      Left = 81
+      Height = 24
+      Top = 224
+      Width = 24
+      Caption = '°'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton176: TSpeedButton
+      Left = 177
+      Height = 24
+      Top = 224
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton177: TSpeedButton
+      Left = 153
+      Height = 24
+      Top = 224
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton178: TSpeedButton
+      Left = 129
+      Height = 24
+      Top = 224
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton179: TSpeedButton
+      Left = 105
+      Height = 24
+      Top = 224
+      Width = 24
+      Caption = '±'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton180: TSpeedButton
+      Left = 369
+      Height = 24
+      Top = 224
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton181: TSpeedButton
+      Left = 345
+      Height = 24
+      Top = 224
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton182: TSpeedButton
+      Left = 321
+      Height = 24
+      Top = 224
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton183: TSpeedButton
+      Left = 297
+      Height = 24
+      Top = 224
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton184: TSpeedButton
+      Left = 273
+      Height = 24
+      Top = 224
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton185: TSpeedButton
+      Left = 249
+      Height = 24
+      Top = 224
+      Width = 24
+      Caption = '·'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton186: TSpeedButton
+      Left = 225
+      Height = 24
+      Top = 224
+      Width = 24
+      Caption = '¶'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton187: TSpeedButton
+      Left = 201
+      Height = 24
+      Top = 224
+      Width = 24
+      Caption = 'µ'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton188: TSpeedButton
+      Left = 441
+      Height = 24
+      Top = 224
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton189: TSpeedButton
+      Left = 417
+      Height = 24
+      Top = 224
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton190: TSpeedButton
+      Left = 393
+      Height = 24
+      Top = 224
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton191: TSpeedButton
+      Left = 9
+      Height = 24
+      Top = 248
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton192: TSpeedButton
+      Left = 33
+      Height = 24
+      Top = 248
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton193: TSpeedButton
+      Left = 57
+      Height = 24
+      Top = 248
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton194: TSpeedButton
+      Left = 81
+      Height = 24
+      Top = 248
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton195: TSpeedButton
+      Left = 177
+      Height = 24
+      Top = 248
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton196: TSpeedButton
+      Left = 153
+      Height = 24
+      Top = 248
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton197: TSpeedButton
+      Left = 129
+      Height = 24
+      Top = 248
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton198: TSpeedButton
+      Left = 105
+      Height = 24
+      Top = 248
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton199: TSpeedButton
+      Left = 369
+      Height = 24
+      Top = 248
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton200: TSpeedButton
+      Left = 345
+      Height = 24
+      Top = 248
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton201: TSpeedButton
+      Left = 321
+      Height = 24
+      Top = 248
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton202: TSpeedButton
+      Left = 297
+      Height = 24
+      Top = 248
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton203: TSpeedButton
+      Left = 273
+      Height = 24
+      Top = 248
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton204: TSpeedButton
+      Left = 249
+      Height = 24
+      Top = 248
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton205: TSpeedButton
+      Left = 225
+      Height = 24
+      Top = 248
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton206: TSpeedButton
+      Left = 201
+      Height = 24
+      Top = 248
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton207: TSpeedButton
+      Left = 441
+      Height = 24
+      Top = 248
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton208: TSpeedButton
+      Left = 417
+      Height = 24
+      Top = 248
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton209: TSpeedButton
+      Left = 393
+      Height = 24
+      Top = 248
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton210: TSpeedButton
+      Left = 9
+      Height = 24
+      Top = 272
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton211: TSpeedButton
+      Left = 33
+      Height = 24
+      Top = 272
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton212: TSpeedButton
+      Left = 57
+      Height = 24
+      Top = 272
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton213: TSpeedButton
+      Left = 81
+      Height = 24
+      Top = 272
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton214: TSpeedButton
+      Left = 177
+      Height = 24
+      Top = 272
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton215: TSpeedButton
+      Left = 153
+      Height = 24
+      Top = 272
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton216: TSpeedButton
+      Left = 129
+      Height = 24
+      Top = 272
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton217: TSpeedButton
+      Left = 105
+      Height = 24
+      Top = 272
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton218: TSpeedButton
+      Left = 369
+      Height = 24
+      Top = 272
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton219: TSpeedButton
+      Left = 345
+      Height = 24
+      Top = 272
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton220: TSpeedButton
+      Left = 321
+      Height = 24
+      Top = 272
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton221: TSpeedButton
+      Left = 297
+      Height = 24
+      Top = 272
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton222: TSpeedButton
+      Left = 273
+      Height = 24
+      Top = 272
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton223: TSpeedButton
+      Left = 249
+      Height = 24
+      Top = 272
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton224: TSpeedButton
+      Left = 225
+      Height = 24
+      Top = 272
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton225: TSpeedButton
+      Left = 201
+      Height = 24
+      Top = 272
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton226: TSpeedButton
+      Left = 441
+      Height = 24
+      Top = 272
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton227: TSpeedButton
+      Left = 417
+      Height = 24
+      Top = 272
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton228: TSpeedButton
+      Left = 393
+      Height = 24
+      Top = 272
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton229: TSpeedButton
+      Left = 9
+      Height = 24
+      Top = 296
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton230: TSpeedButton
+      Left = 33
+      Height = 24
+      Top = 296
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton231: TSpeedButton
+      Left = 57
+      Height = 24
+      Top = 296
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton232: TSpeedButton
+      Left = 81
+      Height = 24
+      Top = 296
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton233: TSpeedButton
+      Left = 177
+      Height = 24
+      Top = 296
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton234: TSpeedButton
+      Left = 153
+      Height = 24
+      Top = 296
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton235: TSpeedButton
+      Left = 129
+      Height = 24
+      Top = 296
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton236: TSpeedButton
+      Left = 105
+      Height = 24
+      Top = 296
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton237: TSpeedButton
+      Left = 369
+      Height = 24
+      Top = 296
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton238: TSpeedButton
+      Left = 345
+      Height = 24
+      Top = 296
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton239: TSpeedButton
+      Left = 321
+      Height = 24
+      Top = 296
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton240: TSpeedButton
+      Left = 297
+      Height = 24
+      Top = 296
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton241: TSpeedButton
+      Left = 273
+      Height = 24
+      Top = 296
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton242: TSpeedButton
+      Left = 249
+      Height = 24
+      Top = 296
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton243: TSpeedButton
+      Left = 225
+      Height = 24
+      Top = 296
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton244: TSpeedButton
+      Left = 201
+      Height = 24
+      Top = 296
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton245: TSpeedButton
+      Left = 441
+      Height = 24
+      Top = 296
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton246: TSpeedButton
+      Left = 417
+      Height = 24
+      Top = 296
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+    object SpeedButton247: TSpeedButton
+      Left = 393
+      Height = 24
+      Top = 296
+      Width = 24
+      Caption = '?'
+      Flat = True
+      OnClick = SymbolClick
+    end
+  end
+  object SelSym: TLabeledEdit
+    Left = 13
+    Height = 27
+    Top = 386
+    Width = 216
+    EditLabel.AnchorSideLeft.Control = SelSym
+    EditLabel.AnchorSideRight.Control = SelSym
+    EditLabel.AnchorSideRight.Side = asrBottom
+    EditLabel.AnchorSideBottom.Control = SelSym
+    EditLabel.Left = 13
+    EditLabel.Height = 17
+    EditLabel.Top = 366
+    EditLabel.Width = 216
+    EditLabel.Caption = 'Selected symbols'
+    EditLabel.ParentColor = False
+    TabOrder = 2
+  end
+  object BitBtn1: TBitBtn
+    Left = 412
+    Height = 30
+    Top = 383
+    Width = 75
+    Caption = '&Close'
+    Kind = bkClose
+    OnClick = BitBtn1Click
+    TabOrder = 3
+  end
+  object BitBtn2: TBitBtn
+    Left = 336
+    Height = 30
+    Top = 383
+    Width = 75
+    Caption = '&Insert'
+    Default = True
+    Kind = bkYes
+    OnClick = BitBtn2Click
+    TabOrder = 4
+  end
+end

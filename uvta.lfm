@@ -1,0 +1,53 @@
+object fVTA: TfVTA
+  Left = 458
+  Height = 240
+  Top = 257
+  Width = 447
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsDialog
+  Caption = 'PiNote - Internal variable for tool''s argument'
+  ClientHeight = 240
+  ClientWidth = 447
+  Font.Height = -12
+  OnCreate = FormCreate
+  Position = poMainFormCenter
+  LCLVersion = '2.0.8.0'
+  object ListView: TListView
+    Left = 0
+    Height = 200
+    Top = 0
+    Width = 447
+    Align = alTop
+    Columns = <    
+      item
+        Caption = 'Variable'
+        Width = 100
+      end    
+      item
+        Caption = 'Argument'
+        Width = 330
+      end>
+    ReadOnly = True
+    RowSelect = True
+    TabOrder = 0
+    ViewStyle = vsReport
+  end
+  object Button1: TButton
+    Left = 368
+    Height = 25
+    Top = 208
+    Width = 75
+    Caption = '&Cancel'
+    OnClick = Button1Click
+    TabOrder = 1
+  end
+  object Button2: TButton
+    Left = 288
+    Height = 25
+    Top = 208
+    Width = 75
+    Caption = '&Ok'
+    OnClick = Button2Click
+    TabOrder = 2
+  end
+end

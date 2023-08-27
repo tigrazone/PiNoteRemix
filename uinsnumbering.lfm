@@ -1,0 +1,149 @@
+object fInsNumbering: TfInsNumbering
+  Left = 449
+  Height = 340
+  Top = 209
+  Width = 440
+  BorderStyle = bsDialog
+  Caption = 'Insert numbering'
+  ClientHeight = 340
+  ClientWidth = 440
+  Font.Height = -12
+  OnCreate = FormCreate
+  OnShow = FormShow
+  Position = poMainFormCenter
+  LCLVersion = '2.0.8.0'
+  object rgType: TRadioGroup
+    Left = 288
+    Height = 178
+    Top = 24
+    Width = 144
+    AutoFill = True
+    ChildSizing.LeftRightSpacing = 6
+    ChildSizing.TopBottomSpacing = 6
+    ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+    ChildSizing.EnlargeVertical = crsHomogenousChildResize
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 1
+    ClientHeight = 174
+    ClientWidth = 140
+    Items.Strings = (
+      'Hexadecimal'
+      'Decimal'
+      'Octal'
+      'Binary'
+      'Character'
+    )
+    OnSelectionChanged = rgTypeSelectionChanged
+    TabOrder = 0
+  end
+  object FirstLine: TLabeledEdit
+    Left = 104
+    Height = 26
+    Top = 24
+    Width = 141
+    EditLabel.Height = 15
+    EditLabel.Width = 47
+    EditLabel.Caption = 'First line'
+    EditLabel.ParentColor = False
+    LabelPosition = lpLeft
+    LabelSpacing = 45
+    TabOrder = 1
+  end
+  object Increment: TLabeledEdit
+    Left = 104
+    Height = 26
+    Top = 64
+    Width = 141
+    EditLabel.Height = 15
+    EditLabel.Width = 58
+    EditLabel.Caption = 'Increment'
+    EditLabel.ParentColor = False
+    LabelPosition = lpLeft
+    LabelSpacing = 34
+    TabOrder = 2
+  end
+  object NumLines: TLabeledEdit
+    Left = 104
+    Height = 26
+    Top = 104
+    Width = 141
+    EditLabel.Height = 15
+    EditLabel.Width = 89
+    EditLabel.Caption = 'Number of lines'
+    EditLabel.ParentColor = False
+    LabelPosition = lpLeft
+    ReadOnly = True
+    TabOrder = 3
+  end
+  object txBefore: TLabeledEdit
+    Left = 104
+    Height = 26
+    Top = 144
+    Width = 141
+    EditLabel.Height = 15
+    EditLabel.Width = 63
+    EditLabel.Caption = 'Text before'
+    EditLabel.ParentColor = False
+    LabelPosition = lpLeft
+    LabelSpacing = 25
+    TabOrder = 4
+  end
+  object txAfter: TLabeledEdit
+    Left = 104
+    Height = 26
+    Top = 184
+    Width = 141
+    EditLabel.Height = 15
+    EditLabel.Width = 53
+    EditLabel.Caption = 'Text after'
+    EditLabel.ParentColor = False
+    LabelPosition = lpLeft
+    LabelSpacing = 35
+    TabOrder = 5
+  end
+  object cbCapital: TCheckBox
+    Left = 16
+    Height = 21
+    Top = 220
+    Width = 101
+    Caption = 'Capital letters'
+    Enabled = False
+    TabOrder = 6
+  end
+  object cbSkip: TCheckBox
+    Left = 16
+    Height = 21
+    Top = 252
+    Width = 113
+    Caption = 'Skip empty lines'
+    TabOrder = 7
+  end
+  object cbRestart: TCheckBox
+    Left = 16
+    Height = 21
+    Top = 284
+    Width = 224
+    Caption = 'Restart numbering after empty lines'
+    TabOrder = 8
+  end
+  object Button1: TButton
+    Left = 352
+    Height = 25
+    Top = 304
+    Width = 75
+    Caption = '&Cancel'
+    OnClick = Button1Click
+    TabOrder = 9
+  end
+  object Button2: TButton
+    Left = 272
+    Height = 25
+    Top = 304
+    Width = 75
+    Caption = '&Ok'
+    OnClick = Button2Click
+    TabOrder = 10
+  end
+end

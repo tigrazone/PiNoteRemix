@@ -1,0 +1,133 @@
+object fSummary: TfSummary
+  Left = 354
+  Height = 259
+  Top = 323
+  Width = 557
+  BorderStyle = bsDialog
+  Caption = 'Document summary'
+  ClientHeight = 259
+  ClientWidth = 557
+  Font.Height = -12
+  Position = poOwnerFormCenter
+  LCLVersion = '2.0.8.0'
+  object Label1: TLabel
+    Left = 24
+    Height = 15
+    Top = 16
+    Width = 53
+    Caption = 'File path: '
+    ParentColor = False
+  end
+  object mfPath: TMemo
+    Left = 80
+    Height = 58
+    Top = 16
+    Width = 456
+    BorderStyle = bsNone
+    ReadOnly = True
+    TabOrder = 0
+  end
+  object Button1: TButton
+    Left = 0
+    Height = 27
+    Top = 232
+    Width = 557
+    Align = alBottom
+    Caption = 'Close'
+    OnClick = Button1Click
+    TabOrder = 1
+  end
+  object Label2: TLabel
+    Left = 30
+    Height = 16
+    Top = 88
+    Width = 47
+    AutoSize = False
+    Caption = 'File size:'
+    ParentColor = False
+  end
+  object sFileSize: TStaticText
+    Left = 80
+    Height = 18
+    Top = 86
+    Width = 456
+    Caption = '0000'
+    TabOrder = 2
+  end
+  object Label3: TLabel
+    Left = 27
+    Height = 16
+    Top = 112
+    Width = 50
+    AutoSize = False
+    Caption = 'File date: '
+    ParentColor = False
+  end
+  object sFileDate: TStaticText
+    Left = 80
+    Height = 18
+    Top = 111
+    Width = 456
+    Caption = '000'
+    TabOrder = 3
+  end
+  object Label4: TLabel
+    Left = 13
+    Height = 17
+    Top = 135
+    Width = 64
+    AutoSize = False
+    Caption = 'Text length: '
+    ParentColor = False
+  end
+  object sTextLen1: TStaticText
+    Left = 80
+    Height = 18
+    Top = 134
+    Width = 456
+    Caption = '000'
+    TabOrder = 4
+  end
+  object sTextLen2: TStaticText
+    Left = 80
+    Height = 18
+    Top = 158
+    Width = 456
+    Caption = '000'
+    TabOrder = 5
+  end
+  object Label5: TLabel
+    Left = 15
+    Height = 15
+    Top = 183
+    Width = 62
+    AutoSize = False
+    Caption = 'Total lines: '
+    ParentColor = False
+  end
+  object sTextLines: TStaticText
+    Left = 80
+    Height = 18
+    Top = 182
+    Width = 456
+    Caption = '000'
+    TabOrder = 6
+  end
+  object Label6: TLabel
+    Left = 7
+    Height = 15
+    Top = 204
+    Width = 70
+    AutoSize = False
+    Caption = 'Total words: '
+    ParentColor = False
+  end
+  object sTotalWords: TStaticText
+    Left = 80
+    Height = 18
+    Top = 203
+    Width = 456
+    Caption = '000'
+    TabOrder = 7
+  end
+end

@@ -1,0 +1,100 @@
+object fQueryEditedFiles: TfQueryEditedFiles
+  Left = 360
+  Height = 228
+  Top = 246
+  Width = 578
+  BorderStyle = bsDialog
+  ClientHeight = 228
+  ClientWidth = 578
+  Font.Height = -12
+  OnCreate = FormCreate
+  Position = poMainFormCenter
+  LCLVersion = '2.0.12.0'
+  object StaticText1: TStaticText
+    Left = 10
+    Height = 27
+    Top = 10
+    Width = 558
+    Align = alTop
+    Alignment = taCenter
+    AutoSize = True
+    BorderSpacing.Left = 10
+    BorderSpacing.Top = 10
+    BorderSpacing.Right = 10
+    Caption = 'Some documents have been modified.'
+    Font.Height = -16
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 0
+  end
+  object StaticText2: TStaticText
+    Left = 10
+    Height = 22
+    Top = 37
+    Width = 558
+    Align = alTop
+    Alignment = taCenter
+    AutoSize = True
+    BorderSpacing.Left = 10
+    BorderSpacing.Right = 10
+    Caption = 'If you confirm the chosen option, any unsaved changes will be lost'
+    Font.Height = -13
+    ParentFont = False
+    TabOrder = 1
+  end
+  object lbEditedDoc: TListBox
+    Left = 10
+    Height = 101
+    Top = 91
+    Width = 558
+    Align = alTop
+    BorderSpacing.Left = 10
+    BorderSpacing.Top = 5
+    BorderSpacing.Right = 10
+    ItemHeight = 0
+    ScrollWidth = 556
+    TabOrder = 2
+    TopIndex = -1
+  end
+  object Label1: TLabel
+    Left = 10
+    Height = 17
+    Top = 69
+    Width = 568
+    Align = alTop
+    BorderSpacing.Left = 10
+    BorderSpacing.Top = 10
+    Caption = 'Modified documents:'
+    ParentColor = False
+  end
+  object BitBtn1: TBitBtn
+    Left = 10
+    Height = 30
+    Top = 195
+    Width = 176
+    Caption = '&Close without saving'
+    Kind = bkCancel
+    OnClick = BitBtn1Click
+    TabOrder = 3
+  end
+  object BitBtn3: TBitBtn
+    Left = 392
+    Height = 30
+    Top = 195
+    Width = 176
+    Caption = '&Save all'
+    Kind = bkYesToAll
+    OnClick = BitBtn3Click
+    TabOrder = 4
+  end
+  object BitBtn4: TBitBtn
+    Left = 200
+    Height = 30
+    Top = 195
+    Width = 176
+    Caption = 'A&bort'
+    Kind = bkIgnore
+    OnClick = BitBtn4Click
+    TabOrder = 5
+  end
+end

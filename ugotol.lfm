@@ -1,0 +1,50 @@
+object GotoL: TGotoL
+  Left = 469
+  Height = 90
+  Top = 239
+  Width = 245
+  BorderStyle = bsDialog
+  Caption = 'Go To Line'
+  ClientHeight = 90
+  ClientWidth = 245
+  Font.Height = -12
+  OnCreate = FormCreate
+  OnShow = FormShow
+  Position = poOwnerFormCenter
+  LCLVersion = '2.0.8.0'
+  object BitBtn2: TBitBtn
+    Left = 88
+    Height = 30
+    Top = 56
+    Width = 75
+    Caption = '&OK'
+    Default = True
+    Kind = bkOK
+    OnClick = BitBtn2Click
+    TabOrder = 0
+  end
+  object BitBtn1: TBitBtn
+    Left = 165
+    Height = 30
+    Top = 56
+    Width = 75
+    Cancel = True
+    Caption = '&Cancell'
+    Kind = bkCancel
+    OnClick = BitBtn1Click
+    TabOrder = 1
+  end
+  object LineNumber: TLabeledEdit
+    Left = 8
+    Height = 26
+    Top = 24
+    Width = 232
+    EditLabel.Height = 15
+    EditLabel.Width = 232
+    EditLabel.Caption = 'LineNumber'
+    EditLabel.ParentColor = False
+    TabOrder = 2
+    OnKeyDown = LineNumberKeyDown
+    OnKeyPress = LineNumberKeyPress
+  end
+end
